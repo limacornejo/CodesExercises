@@ -67,6 +67,8 @@ phi2 = -0.8;
 
 % Vector of zeros
 y3 = zeros(n,1);
+y3(1) = c/(1-phi1-phi2);
+y3(1) = c/(1-phi1-phi2);
 
 % Loop
 for i = 1:n-2
@@ -78,7 +80,7 @@ figure
 subplot(2,1,1), plot(t,y3, ' '), title('AR(2)')
 subplot(2,1,2), autocorr(y3)
 
-%% 4. Simulate an AR(2) - Appendix - Example 1
+%% 5. Simulate an AR(2) - Appendix - Example 1
 
 % AR(2) coefficients
 phi1 = 0.9;
@@ -97,7 +99,7 @@ figure
 subplot(2,1,1), plot(t,y4, ' '), title('AR(2)with \phi_1 = 0.9 and \phi_2 = -0.2')
 subplot(2,1,2), autocorr(y4)
 
-%% 5. Simulate an AR(2) - Appendix - Example 2
+%% 6. Simulate an AR(2) - Appendix - Example 2
 
 % AR(2) coefficients
 phi1 = -0.8;
